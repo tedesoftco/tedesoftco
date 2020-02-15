@@ -1,0 +1,25 @@
+{
+    "correocontacto": "contacto@tedesoft.com",
+    "direccion": "Calle 10A # 11 - 60, Funza - Cundinamarca",
+    "telefono": "3013360158",
+    "facebook": "https://www.facebook.com/tedesoft.co/",
+    "servicios": [{
+            "titulo": "Desarrollo de paginas web",
+            "subtitulo": "Quedaras maravillado",
+            "descripcion": "Contamos con experiencia en desarrollo de portales web e intranet, los cuales le ayudan a mejorar su organización.",
+            "imagen": "Px3iBXV-4TU"
+        },
+        {
+            "titulo": "Social media",
+            "subtitulo": "Crecera tu negocio",
+            "descripcion": "Nuestro equipo tiene la fortaleza de proyectar su negocio a través de las redes sociales",
+            "imagen": "DfMMzzi3rmg"
+        },
+        {
+            "titulo": "Consultoria",
+            "subtitulo": "Resolveras tus dudas",
+            "descripcion": "Apoyamos tu empresa en la toma de decisiones para adquirir la tecnología más conveniente para su operación.",
+            "imagen": "Lks7vei-eAg"
+        }
+    ]
+}

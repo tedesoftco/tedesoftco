@@ -1,0 +1,67 @@
+<app-header [img]="'O3gOgPB4sRU'" [titulo]="'Contacto'" [red]="252" [green]="173" [blue]="127"></app-header>
+
+<div class="pt-5 pt-lg-5"></div>
+<div class="pt-5 pt-lg-5"></div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-4 d-none d-sm-block">
+            <img src="https://source.unsplash.com/JYGnB9gTCls/400x600" class="img-fluid" alt="Contacto TedeSoft">
+        </div>
+        <div class="col-12 col-sm-8">
+            <form [formGroup]="formContac" (ngSubmit)="EnviarContacto()">
+                <div class="form-group">
+                    <input type="text" class="form-control" title="Digite su nombre" [ngClass]="{ 'is-invalid': submitted && f.nombres.errors }" formControlName="nombres" id="nombres" placeholder="Nombres">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" title="Digite su apellido" [ngClass]="{ 'is-invalid': submitted && f.apellidos.errors }" formControlName="apellidos" id="apellidos" placeholder="Apellidos">
+                </div>
+                <div class="form-group" [ngClass]="{'is-invalid':(formContac.get('email').touched || formContac.get('email').dirty)}">
+                    <input type="email" class="form-control" title="Digite su correo electrónico" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" formControlName="email" id="email" placeholder="Correo eletrónico">
+                </div>
+                <div class="form-group" [ngClass]="{'is-invalid':(formContac.get('telefono').touched || formContac.get('telefono').dirty)}">
+                    <input type="tel" class="form-control" title="Digite su número telefonico" [ngClass]="{ 'is-invalid': submitted && f.telefono.errors }" formControlName="telefono" id="telefono" placeholder="Número de telefono">
+                </div>
+                <div class="form-group" [ngClass]="{'is-invalid':(formContac.get('observaciones').touched || formContac.get('observaciones').dirty)}">
+                    <textarea class="form-control" title="Digite sus comentarios e inquietudes" [ngClass]="{ 'is-invalid': submitted && f.observaciones.errors }" formControlName="observaciones" id="observaciones" rows="3" placeholder="Observaciones"></textarea>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" title="Debe aceptar los terminos y condiciones" [ngClass]="{ 'is-invalid': submitted && f.aceptoContacto.errors }" formControlName="aceptoContacto" type="checkbox" value="" id="aceptocontacto">
+                    <label class="form-check-label" for="aceptocontacto">
+                          Acepto que se pongan en contacto conmigo
+                        </label>
+                </div>
+                <br>
+                <div class="form-group text-right">
+                    <button type="submit" class="btn btn-success" title="Presione el boton enviar el formulario">Enviar</button>
+                    <!-- <button type="submit" [disabled]="!formContac.valid" class="btn btn-success">Enviar</button> -->
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div id="2"></div>
+<div id="wdr3pz"></div>
+<div id="Bitrix24FormObject"></div>
+<script id="bx24_form_inline" data-skip-moving="true">
+    (function(w, d, u, b) {
+        w['Bitrix24FormObject'] = b;
+        w[b] = w[b] || function() {
+            arguments[0].ref = u;
+            (w[b].forms = w[b].forms || []).push(arguments[0])
+        };
+        if (w[b]['forms']) return;
+        var s = d.createElement('script');
+        s.async = 1;
+        s.src = u + '?' + (1 * new Date());
+        var h = d.getElementsByTagName('script')[0];
+        h.parentNode.insertBefore(s, h);
+    })(window, document, 'https://tedesoft.bitrix24.es/bitrix/js/crm/form_loader.js', 'b24form');
+
+    b24form({
+        "id": "2",
+        "lang": "la",
+        "sec": "wdr3pz",
+        "type": "inline"
+    });
+</script>

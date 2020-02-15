@@ -1,0 +1,21 @@
+<app-header [img]="'XkKCui44iM0'" [titulo]="'Conozcanos'" [red]="156" [green]="238" [blue]="170"></app-header>
+
+<div class="pt-5 pt-lg-5"></div>
+<div class="pt-5 pt-lg-5"></div>
+
+<div class="container">
+    <div class="row" *ngFor="let servicio of _servicio.info.servicios">
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">{{servicio.titulo}} <span class="text-muted">{{servicio.subtitulo}}</span></h2>
+                <p class="lead">{{servicio.descripcion}}</p>
+            </div>
+            <div class="col-md-5">
+                <img class="img-fluid" src="https://source.unsplash.com/{{servicio.imagen}}/500x400" alt="{{servicio.titulo}}">
+                <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+            </div>
+        </div>
+        <hr class="featurette-divider d-xs-none">
+    </div>
+    <app-team [header]=!viewHeaderTeam></app-team>
+</div>
